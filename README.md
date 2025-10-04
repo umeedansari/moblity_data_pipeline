@@ -59,7 +59,7 @@ by applying custom business logic and data quality improvements.
 - **Upsert with Delta Lake**:
   - Uses `MERGE` to update existing records or insert new ones based on timestamps.
 - **Modular Python Code**: All transformations are encapsulated in a reusable `transformation` class.
-- **Applied To**: All domain tables – `customer`, `location`, `trips`, `payment`, `driver`, `vehicle`
+- **Applied To**: All domain tables – `customer`, `location`, `payment`, `driver`, `vehicle` excluding `trips`.
 
 ---
 
