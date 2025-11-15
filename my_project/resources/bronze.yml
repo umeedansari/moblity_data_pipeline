@@ -1,0 +1,12 @@
+resources:
+  jobs:
+    Mobility_Bronze:
+      name: Mobility_Bronze
+      tasks:
+        - task_key: task-1
+          notebook_task:
+            notebook_path: ../../src/Bronze/Data_ingestion.ipynb
+            source: WORKSPACE
+      queue:
+        enabled: true
+      performance_target: PERFORMANCE_OPTIMIZED
