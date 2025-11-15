@@ -34,14 +34,6 @@ The Bronze Layer handles raw data ingestion from CSV files using **Apache Spark 
 - **Delta Lake Integration**: Writes data with ACID support and schema evolution.
 - **Checkpointing**: Ensures streaming job fault tolerance and recovery.
 
-### Source Folders Ingested:
-
-- `customer`
-- `location`
-- `trips`
-- `payment`
-- `driver`
-- `vehicle`
 
 ---
 
@@ -110,3 +102,18 @@ Project2/
 │   │   └── gold/
 │   ├── snapshots/
 │   └── sources.yml
+```
+
+## 📊 Dashboard – Business Insights Layer
+
+The final output of the Gold Layer feeds into a dashboard that delivers real-time, actionable insights for stakeholders.
+Key Features:
+- Data Source: Connects directly to Gold Layer Delta tables.
+- KPIs Tracked:
+- Total Trips, Revenue, and Active Drivers
+- Payment Method Distribution
+
+<img width="1602" height="711" alt="image" src="https://github.com/user-attachments/assets/8185a388-e34d-453f-8c85-9360df807b64" />
+
+
+
