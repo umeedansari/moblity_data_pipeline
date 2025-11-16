@@ -1,0 +1,16 @@
+version: 2 
+sources:
+  - name: bronze_source
+    database: project2
+    schema: bronze
+    tables:
+      - name: trips
+  - name : silver_source
+    database: project2
+    schema: silver
+    tables:
+      - name: customer
+      - name:  driver
+      - name:  location
+      - name: payment
+      - name: vehicle

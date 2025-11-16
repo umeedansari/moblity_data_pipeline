@@ -1,0 +1,53 @@
+snapshots:
+  - name: customer_snapshot
+    relation: source('silver_source', 'customer')
+    config:
+      schema: gold
+      database: project2
+      unique_key: customer_id
+      strategy: process_timestamp
+      updated_at: updated_at
+      dbt_valid_to_current: "to_date('9999-12-31')" 
+
+  - name: location_snapshot
+    relation: source('silver_source', 'location')
+    config:
+      schema: gold
+      database: project2
+      unique_key: location_id
+      strategy: process_timestamp
+      updated_at: updated_at
+      dbt_valid_to_current: "to_date('9999-12-31')" 
+
+  - name: payment_snapshot
+    relation: source('silver_source', 'payment')
+    config:
+      schema: gold
+      database: project2
+      unique_key: payment_id
+      strategy: process_timestamp
+      updated_at: updated_at
+      dbt_valid_to_current: "to_date('9999-12-31')" 
+
+  - name: driver_snapshot
+    relation: source('silver_source', 'driver')
+    config:
+      schema: gold
+      database: project2
+      unique_key: driver_id
+      strategy: process_timestamp
+      updated_at: updated_at
+      dbt_valid_to_current: "to_date('9999-12-31')" 
+
+  - name: vehicle_snapshot
+    relation: source('silver_source', 'vehicle')
+    config:
+      schema: gold
+      database: project2
+      unique_key: vehicle_id
+      strategy: process_timestamp
+      updated_at: updated_at
+      dbt_valid_to_current: "to_date('9999-12-31')" 
+
+  
+  
